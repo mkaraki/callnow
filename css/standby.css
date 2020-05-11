@@ -1,0 +1,33 @@
+html {
+    width: 310px;
+}
+
+body {
+    height: 100%;
+    width: 300px;
+
+    margin: 5px;
+    padding: 0;
+}
+
+.sq-inner-window {
+    background-color: black;
+    border: solid 1px white;
+    width: 276px;
+    height: 276px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.status-display {
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgba(00, 00, 255, 0.3);
+}
+
+.status-display-big {
+    font-size: 32px;
+    border-bottom: solid 1px #8b0000;
+}

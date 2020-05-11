@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Call now</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/standby.css">
+</head>
+
+<body>
+
+    <h3 id="status">Standby</h3>
+    <hr />
+
+    <div id="error-window" class="window hide window-red">
+        <h5>Error: <span id="error-title"></span></h5>
+        <span id="error-desc"></span>
+    </div>
+
+    <div id="incoming-window" class="window hide window-blue">
+        <h5>Incoming call</h5>
+        From: <span id="incoming-id"></span>
+        <br />
+        <br />
+        <button type="button" id="incoming-accept" class="button-green">Accept</button>
+        <br />
+        <button type="button" id="incoming-decline" class="button-red">Decline</button>
+    </div>
+
+    <div id="status-window" class="window hide">
+        Number: <span id="number-self">Preparing</span>
+        <div id="visual-window" class="sq-inner-window">
+            <video id="call-video" class="hide" autoplay></video>
+
+            <div id="user-ind" class="status-display status-display-big hide"></div>
+            <div id="audio-ind" class="status-display hide">AUDIO ONLY</div>
+
+            <div id="noncall-ind" class="status-display"></div>
+        </div>
+        <audio id="call-audio"></audio>
+    </div>
+
+    <div id="outgoing-window" class="window hide">
+        <h5>Outgoing call</h5>
+        <input type="text" id="outgoing-number" placeholder="Number: abcdefghijk01234">
+        <br />
+        <br />
+        <button type="button" id="outgoing-dial" class="button-green">Dial</button>
+    </div>
+
+    <div id="ongoing-controller-window" class="window hide">
+        <button type="button" id="ongoing-hangup" class="button-red">Hangup</button>
+    </div>
+
+    <div id="initialize-window" class="window window-green">
+        <input type="checkbox" id="init-usevideo">
+        <label for="init-usevideo">Use camera</label>
+        <br />
+        <button type="button" id="init-start">Start</button>
+    </div>
+
+    <hr />
+    <button type="button" id="close-btn" class="button-red">Close Client</button>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>
+    <script src="js/standby.js"></script>
+</body>
+
+</html>

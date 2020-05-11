@@ -1,0 +1,18 @@
+body {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.qa-window {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+h4 {
+    margin-bottom: 3px;
+}
+
+.button-mini {
+    width: 150px;
+}
